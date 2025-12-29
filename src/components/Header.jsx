@@ -6,20 +6,24 @@ import { IoMenu } from "react-icons/io5";
 import { MdOutlineMessage } from "react-icons/md";
 import { RiExpandLeftRightLine } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
+import { Link, NavLink } from "react-router";
 const menuData = [
-  { icon: <FiHome />, name: "HOME" },
-  { icon: <GiEskimo />, name: "SKILLS" },
+  { icon: <FiHome />, name: "HOME",path:'/' },
+  { icon: <GiEskimo />, name: "SKILLS",path:'/skills' },
   {
     icon: <GiSpellBook />,
     name: "RESUME",
+    path:'/resume'
   },
   {
     icon: <FaGraduationCap />,
     name: "EDUCATION",
+      path:'/education'
   },
   {
     icon: <MdOutlineMessage />,
     name: "CONTACT",
+    path:'/contact'
   },
 ];
 
@@ -37,13 +41,13 @@ const Header = () => {
 
         <div className="text-[#dcdfe7]  items-center gap-6 text-base hidden md:flex">
           {menuData.map((item, idx) => (
-            <div
+            <NavLink to={item.path}
               key={idx}
               className="flex gap-2 items-center py-1 cursor-pointer hover:text-purple-400 transition-colors"
             >
               {item.icon}
               <p className="text-sm font-semibold ">{item.name}</p>
-            </div>
+            </NavLink>
           ))}
         </div>
         <button
@@ -56,7 +60,7 @@ const Header = () => {
         {open && (
           <div className="md:hidden  text-[#dcdfe7]   bg-[var(--primary)] absolute top-[74px] -left-1 w-full  px-4 pb-4 ">
             {menuData.map((item, idx) => (
-              <div
+              <NavLink to={item.path}
                 key={idx}
                 className="flex gap-3 items-center py-2 border-b border-white/10 "
               >
@@ -64,7 +68,7 @@ const Header = () => {
                 <p className="text-sm font-semibold text-[#dcdfe7] ">
                   {item.name}
                 </p>
-              </div>
+              </NavLink>
             ))}
           </div>
         )}
