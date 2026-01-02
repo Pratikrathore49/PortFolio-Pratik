@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { LuArrowRight } from "react-icons/lu";
 import Loader from "../Loader";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -44,7 +45,7 @@ const ContactForm = () => {
         !formData.message ||
         !formData.subject
       ) {
-        alert("All fields required");
+        toast.error('All Feilds Are Required')
         return;
       }
     const res =   await fetch("http://localhost:8080/api/contact", {
@@ -53,11 +54,11 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
       if(!res.ok) throw new Error('Failed to submit form');
-      alert("Form Submitted");
+      toast.success('Form Submitted Successfully')
       setFormData({ name: "", email: "", message: "", subject: "" });
     } catch (error) {
       setError('Something went wrong.Please try again.')
-      alert("Form Not Submitted");
+      toast.error("Form Not Submitted")
       console.log("Form Data Not Submitted", error.message);
     } finally {
       setLoading(false);

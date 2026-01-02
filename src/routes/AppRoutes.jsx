@@ -1,14 +1,18 @@
 import {Routes,Route} from 'react-router';
 import MainLayout from '../layouts/MainLayout';
-import Home from '../pages/Home';
-import Skills from '../pages/Skills';
-import Resume from '../pages/Resume';
-import Education from '../pages/Education';
-import Contact from '../pages/Contact';
+import {lazy,Suspense} from 'react';
+import Loader from '../components/Loader';
+
+const Home = lazy(()=>import('../pages/Home'))
+const Skills = lazy(()=>import('../pages/Skills'))
+const Resume = lazy(()=>import('../pages/Resume'))
+const Education = lazy(()=>import('../pages/Education'))
+const Contact = lazy(()=>import('../pages/Contact'))
 
 
 const AppRoutes = () =>{
-    return (
+    return (<>  
+     <Suspense fallback={<Loader/>} >
         <Routes>
             <Route element={<MainLayout/>}>
             <Route index element={<Home/>}/>
@@ -19,9 +23,11 @@ const AppRoutes = () =>{
             </Route>
 
 
-
            
         </Routes>
+      </Suspense>
+        </>
+  
     )
 }
 
