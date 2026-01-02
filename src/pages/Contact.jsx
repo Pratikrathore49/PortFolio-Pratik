@@ -3,6 +3,7 @@ import GetInTouchComponents from "../components/sections/GetInTouchComponents";
 import ContactForm from "../components/sections/ContactForm";
 
 const Contact = () => {
+
   return (
     <section className="text-white bg-gray-900 min-h-screen px-4 md:px-[10vw] pt-20 pb-12">
       <div className="container mx-auto p-4 space-y-16">
