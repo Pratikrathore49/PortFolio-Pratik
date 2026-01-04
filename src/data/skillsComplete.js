@@ -26,12 +26,12 @@ const skillsComplete =[
     isOpen: true,
     skills: [
       { name: "React", level: 90 },
-      { name: "TypeScript", level: 70 },
+      // { name: "TypeScript", level: 70 },
       { name: "JavaScript", level: 85 },
       { name: "HTML", level: 95 },
       { name: "CSS", level: 90 },
       { name: "Tailwind CSS", level: 80 },
-      { name: "Bootstrap", level: 75 },
+      // { name: "Bootstrap", level: 75 },
     ],
   },
 
@@ -85,7 +85,7 @@ const skillsComplete =[
     skills: [
       { name: "Operating System", level: 70 },
       { name: "DBMS", level: 80 },
-      { name: "Computer Networks", level: 90 },
+      { name: "Computer Networks", level: 70 },
      
     ],
   },

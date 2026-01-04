@@ -8,22 +8,22 @@ import { RiExpandLeftRightLine } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import { Link, NavLink } from "react-router";
 const menuData = [
-  { icon: <FiHome />, name: "HOME",path:'/' },
-  { icon: <GiEskimo />, name: "SKILLS",path:'/skills' },
+  { icon: <FiHome />, name: "HOME", path: "/" },
+  { icon: <GiEskimo />, name: "SKILLS", path: "/skills" },
   {
     icon: <GiSpellBook />,
     name: "RESUME",
-    path:'/resume'
+    path: "/resume",
   },
   {
     icon: <FaGraduationCap />,
     name: "EDUCATION",
-      path:'/education'
+    path: "/education",
   },
   {
     icon: <MdOutlineMessage />,
     name: "CONTACT",
-    path:'/contact'
+    path: "/contact",
   },
 ];
 
@@ -41,9 +41,10 @@ const Header = () => {
 
         <div className="text-[#dcdfe7]  items-center gap-6 text-base hidden md:flex">
           {menuData.map((item, idx) => (
-            <NavLink to={item.path}
+            <NavLink
+              to={item.path}
               key={idx}
-              className="flex gap-2 items-center py-1 cursor-pointer hover:text-purple-400 transition-colors"
+              className={ ({isActive})=>isActive? 'text-purple-400 underline underline-offset-8  decoration-purple-400 decoration-2  flex  gap-2 items-center  py-1 cursor-pointer hover:text-purple-400 transition-colors':" flex gap-2 items-center py-1 cursor-pointer hover:text-purple-400 transition-colors"}
             >
               {item.icon}
               <p className="text-sm font-semibold ">{item.name}</p>
@@ -60,7 +61,8 @@ const Header = () => {
         {open && (
           <div className="md:hidden  text-[#dcdfe7]   bg-[var(--primary)] absolute top-[74px] -left-1 w-full  px-4 pb-4 ">
             {menuData.map((item, idx) => (
-              <NavLink to={item.path}
+              <NavLink
+                to={item.path}
                 key={idx}
                 className="flex gap-3 items-center py-2 border-b border-white/10 "
               >

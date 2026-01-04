@@ -79,14 +79,23 @@ const Home = () => {
       </section>
 
       <section className="bg-[var(--primary)]  px-[10vw] text-white py-[10vh]">
-        <span className="flex  gap-2 justify-center pb-8">
-          <p className="text-blue-400">
-            <IoBagCheckOutline fontSize={28} />
-          </p>
-          <h2 className="text-2xl font-semibold uppercase">RECENT PROJECTS</h2>
-        </span>
 
-        <div className="grid grid-cols-1  md:grid-cols-2  gap-6 md:gap-12 ">
+         
+       <div className="relative flex justify-center items-center pb-8 ">
+  {/* Center: Recent Projects */}
+  <span className="flex gap-2 items-center ">
+    <IoBagCheckOutline fontSize={28} className="text-blue-400" />
+    <h2 className="text-2xl font-semibold uppercase">RECENT PROJECTS</h2>
+  </span>
+
+  {/* Right: dfdfdf */}
+  <Link to='/resume#projects' className="absolute right-2 top-3 border px-1 rounded-lg text-blue-400 border-blue-600/80 bg-blue-500/20">see more</Link>
+</div>
+
+
+
+
+        <div className="grid grid-cols-1  md:grid-cols-2  gap-6 md:gap-12 mt-8 ">
           {projects.map((item, idx) => (
             <ProjectCard
               key={idx}

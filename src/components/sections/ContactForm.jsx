@@ -48,11 +48,12 @@ const ContactForm = () => {
         toast.error('All Feilds Are Required')
         return;
       }
-    const res =   await fetch("http://localhost:8080/api/contact", {
+    const res =   await fetch("https://portfolio-backend-rqyl.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      console.log("mera res",res)
       if(!res.ok) throw new Error('Failed to submit form');
       toast.success('Form Submitted Successfully')
       setFormData({ name: "", email: "", message: "", subject: "" });
