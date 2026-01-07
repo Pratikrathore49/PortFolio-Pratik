@@ -37,4 +37,14 @@ export const educationData = [
     icon: LuGraduationCap ,
     color: "#155dfc"
   },
+  {
+     id: 4,
+    date: "Experience ",
+    title: "Mern Stack developer",
+    board: "MindCoders Technology",
+    location: "Vishnupuri, Bholaram , Indore",
+    description: "Focused on gaining valuable experience from senior developers",
+    icon: LuGraduationCap ,
+    color: "#aa25db"
+  }
 ];

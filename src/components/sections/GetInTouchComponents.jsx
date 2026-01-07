@@ -1,5 +1,6 @@
 import React from "react";
 import { getInTouchData } from "../../data/getInTouchData";
+import { Link } from "react-router";
 
 const GetInTouchComponents = () => {
   return (
@@ -16,7 +17,7 @@ const GetInTouchComponents = () => {
                   </span>
                   <p className="text-xl font-medium"> {item.app} </p>
                 </div>
-                <p className="text-gray-300">{item.text}</p>
+                <Link  to={item.link}className="text-gray-300">{item.text}</Link>
               </div>
             );
           })}
