@@ -59,7 +59,7 @@ const Header = () => {
         </button>
 
         {open && (
-          <div className="md:hidden  text-[#dcdfe7]   bg-[var(--primary)] absolute top-[74px] -left-1 w-full  px-4 pb-4 ">
+          <div onClick={()=>setOpen(false)} className="md:hidden  text-[#dcdfe7]   bg-[var(--primary)] absolute top-[74px] -left-1 w-full  px-4 pb-4 ">
             {menuData.map((item, idx) => (
               <NavLink
                 to={item.path}

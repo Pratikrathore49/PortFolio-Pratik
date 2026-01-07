@@ -8,7 +8,7 @@ const Education = () => {
           EDUCATION
         </h2>
         <p className="text-center  text-base sm:text-lg md:text-xl text-gray-400 mb-8 ">
-          My academic journey and professional certifications
+          My academic journey and Experience
         </p>
         <EducationTimeline />
       </div>
