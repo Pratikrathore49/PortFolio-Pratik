@@ -1,5 +1,5 @@
 import SkillsDetails from "../components/SkillsDetails";
-import skillsComplete from "../data/SkillsComplete";
+import skillsComplete from "../data/skillsComplete";
 
 function Skills() {
   return (
