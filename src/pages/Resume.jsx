@@ -68,7 +68,7 @@ function Resume() {
             Pratik Rathore
           </h1>
           <p className="capitalize text-blue-400 text-sm">full stack Developer</p>
-          <div className="flex gap-4 text-xs">
+          <div className="flex flex-col sm:flex-row gap-4 text-xs ">
             {contactDetails.map((item) => (
               <div className="flex items-center gap-1  ">
                 <p className="text-blue-500 text-base ">{item.icon}</p>
