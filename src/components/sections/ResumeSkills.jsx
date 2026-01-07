@@ -58,7 +58,7 @@ const ResumeSkills = () => {
         <div>
           
           <h3 className="capitalize  font-semibold py-1 text-lg">{item.field}</h3>
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 flex-wrap">
             {item.names.map((val) => (
               <p className="text-blue-300 bg-gray-300/20 border border-blue-700/30  px-2 text-base rounded-lg w-fit flex items-center justify-center capitalize">
                 {val}
