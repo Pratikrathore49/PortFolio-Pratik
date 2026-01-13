@@ -41,7 +41,7 @@ const EducationTimeline = () => {
                 </span>
                 <h3 className="text-lg  md:text-xl font-bold my-2">{edu.title}</h3>
                 <p className="text-sm md:text-base text-gray-300 flex items-center gap-2"> <PiBookOpenBold  fontSize={"20px"}  />
-{edu.board}</p>
+             {edu.board}</p>
                 <p className="text-sm md:text-base text-gray-300  flex items-center gap-2"> <IoLocationOutline fontSize={"20px"} />{edu.location}</p>
                 <p className="mt-2 text-gray-300 text-sm">{edu.description}</p>
               </div>

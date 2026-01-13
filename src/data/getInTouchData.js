@@ -43,7 +43,7 @@ export const getInTouchData = [
     icon: FaLinkedinIn,
     color: "#154ee9",
     app: "LinkedIn",
-    text: "https://www.linkedin.com/in/pratik-rathore-631a09349",
-    link:"https://www.linkedin.com/in/pratik-rathore-631a09349"
+    text: "https://www.linkedin.com/in/pratik-rathore-7845683a4",
+    link:"https://www.linkedin.com/in/pratik-rathore-7845683a4"
   },
 ];

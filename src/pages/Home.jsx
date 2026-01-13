@@ -25,7 +25,7 @@ const Home = () => {
           </p>
 
           <div className="text-white flex gap-6 mt-2 ">
-            <a href="/Pratik_rathore_resume.pdf" download className=" flex items-center gap-1 md:py-3 py-1.5 px-3 md:px-6  bg-blue-600 rounded-md cursor-pointer ">
+            <a href="/Resume-Pratik_rathore.pdf" download className=" flex items-center gap-1 md:py-3 py-1.5 px-3 md:px-6  bg-blue-600 rounded-md cursor-pointer ">
               <MdOutlineFileDownload />
               <p className="text-sm">RESUME</p>
             </a>
