@@ -76,7 +76,7 @@ function Resume() {
               </div>
             ))}
           </div>
-          <a href="/Pratik_Resume.pdf"  download className="flex gap-2 mt-2 items-center bg-gradient-to-r from-blue-600 to-blue-400 py-2 px-4 rounded-md"><LuDownload /> <p className="text-sm">Download Resume</p></a>
+          <a href="/Pratik_Resume1.pdf"  download className="flex gap-2 mt-2 items-center bg-gradient-to-r from-blue-600 to-blue-400 py-2 px-4 rounded-md"><LuDownload /> <p className="text-sm">Download Resume</p></a>
         </div>
       </div>
 
