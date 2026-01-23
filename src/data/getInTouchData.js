@@ -8,8 +8,8 @@ export const getInTouchData = [
     icon: CgMail,
     color: "#1d69fd",
     app: "Email",
-    text: "jipratik49@gmail.com",
-    link:"mailto:jipratik49@gmail.com"
+    text: "pratikrathore.pr25@gmail.com",
+    link:"mailto:pratikrathore.pr25@gmail.com"
   },
   {
     icon: FaWhatsapp,

@@ -53,7 +53,7 @@ const contactDetails = [
   },
   {
     icon: <CgMail />,
-    text: "jipratik49@gmail.com ",
+    text: "pratikrathore.pr25@gmail.com ",
   },
 ];
 function Resume() {
